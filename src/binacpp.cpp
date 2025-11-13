@@ -422,7 +422,8 @@ BinaCPP::get_klines(
 	BinaCPP_logger::write_log( "<BinaCPP::get_klines>" ) ;
 
 	string url(BINANCE_HOST);  
-	url += "/api/v1/klines?";
+	// url += "/api/v1/klines?";
+	url += "/api/v3/kliens?";
 
 	string querystring("symbol=");
 	querystring.append( symbol );
